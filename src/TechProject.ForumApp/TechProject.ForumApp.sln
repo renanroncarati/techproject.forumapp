@@ -7,9 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechProjecct.ForumApp.Api",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechProjecct.ForumApp.Api.Tests", "TechProjecct.ForumApp.Api.Tests\TechProjecct.ForumApp.Api.Tests.csproj", "{BEE6E754-069C-4657-8ADD-1845351C6E77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApp.Domain.Entities", "Domain\ForumApp.Domain.Entities\ForumApp.Domain.Entities.csproj", "{5C8F4967-1323-4B67-85AA-05A5F3701439}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApp.Core.Domain", "Domain\ForumApp.Domain.Entities\ForumApp.Core.Domain.csproj", "{5C8F4967-1323-4B67-85AA-05A5F3701439}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{E209807D-FF6D-4D5A-9B3E-76BBD3201C3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C6956C82-7BAF-4F3D-B6A5-444212A75AD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApp.Infrasctructure.EntityFramework", "Infrastructure\ForumApp.Infrasctructure.EntityFramework\ForumApp.Infrasctructure.EntityFramework.csproj", "{BE6C19A1-57BF-43F8-BA60-272F3726C651}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,12 +33,17 @@ Global
 		{5C8F4967-1323-4B67-85AA-05A5F3701439}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C8F4967-1323-4B67-85AA-05A5F3701439}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C8F4967-1323-4B67-85AA-05A5F3701439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6C19A1-57BF-43F8-BA60-272F3726C651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE6C19A1-57BF-43F8-BA60-272F3726C651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE6C19A1-57BF-43F8-BA60-272F3726C651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6C19A1-57BF-43F8-BA60-272F3726C651}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5C8F4967-1323-4B67-85AA-05A5F3701439} = {E209807D-FF6D-4D5A-9B3E-76BBD3201C3F}
+		{BE6C19A1-57BF-43F8-BA60-272F3726C651} = {C6956C82-7BAF-4F3D-B6A5-444212A75AD8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {14D06619-353B-4985-95FD-B1953205C9B1}

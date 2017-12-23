@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForumApp.Domain.Entities
+namespace ForumApp.Core.Domain
 {
-    public class Blog
+    public class Topic
     {
     }
 }

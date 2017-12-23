@@ -1,6 +1,6 @@
 ﻿namespace ForumApp.Core.Domain.Repositories
 {
-    public interface IUserRepository
+    public interface ITopicRepository : IRepository<Topic>
     {
     }
 }
