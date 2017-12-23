@@ -12,6 +12,20 @@ namespace ForumApp.Infrasctructure.EntityFramework.EntityConfigurations
     {
         public UserConfiguration()
         {
+            ToTable("Users")
+                .HasKey(u => u.Id);
+
+            Property(u => u.Login)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+
+            Property(u => u.Password)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+
+            Property(u => u.Email)
+                .HasMaxLength(100)          
+                .IsUnicode(false);
 
         }
     }

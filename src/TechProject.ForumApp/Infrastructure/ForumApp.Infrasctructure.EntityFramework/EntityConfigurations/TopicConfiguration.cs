@@ -12,7 +12,16 @@ namespace ForumApp.Infrasctructure.EntityFramework.EntityConfigurations
     {
         public TopicConfiguration()
         {
+            ToTable("Topics")
+                .HasKey(t => t.Id);
 
+            Property(t => t.Title)
+                .HasMaxLength(200)
+                .IsUnicode(false);
+
+            HasRequired(t => t.User)
+                .WithMany(u => u.Topics)
+                .WillCascadeOnDelete(false);
         }
     }
 }

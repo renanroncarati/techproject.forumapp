@@ -51,6 +51,11 @@
     <Compile Include="EntityConfigurations\TopicConfiguration.cs" />
     <Compile Include="EntityConfigurations\UserConfiguration.cs" />
     <Compile Include="ForumAppContext.cs" />
+    <Compile Include="Migrations\201712231807598_IncludePost_Topic_User.cs" />
+    <Compile Include="Migrations\201712231807598_IncludePost_Topic_User.Designer.cs">
+      <DependentUpon>201712231807598_IncludePost_Topic_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\PostRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
@@ -58,7 +63,11 @@
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201712231807598_IncludePost_Topic_User.resx">
+      <DependentUpon>201712231807598_IncludePost_Topic_User.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
