@@ -1,4 +1,4 @@
-﻿using ForumApp.Core.Domain;
+﻿using ForumApp.Core.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;

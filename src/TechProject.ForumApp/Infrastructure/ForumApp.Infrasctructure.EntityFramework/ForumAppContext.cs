@@ -5,8 +5,8 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ForumApp.Core.Domain;
 using ForumApp.Infrasctructure.EntityFramework.EntityConfigurations;
+using ForumApp.Core.Domain.Entities;
 
 namespace ForumApp.Infrasctructure.EntityFramework
 {
@@ -30,6 +30,6 @@ namespace ForumApp.Infrasctructure.EntityFramework
             modelBuilder.Configurations.Add(new TopicConfiguration());
             modelBuilder.Configurations.Add(new UserConfiguration());
 
-        }
+        }        
     }
 }

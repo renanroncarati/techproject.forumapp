@@ -1,6 +1,8 @@
-﻿namespace ForumApp.Core.Domain.Repositories
+﻿using ForumApp.Core.Domain.Entities;
+
+namespace ForumApp.Core.Domain.Repositories
 {
-    public interface IPostRepository
+    public interface IPostRepository : IRepository<Post>
     {
     }
 }

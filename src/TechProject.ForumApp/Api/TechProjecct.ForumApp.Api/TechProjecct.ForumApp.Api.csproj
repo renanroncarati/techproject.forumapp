@@ -48,6 +48,12 @@
       <HintPath>..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SimpleInjector, Version=4.0.12.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SimpleInjector.4.0.12\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.WebApi, Version=4.0.12.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SimpleInjector.Integration.WebApi.4.0.12\lib\net45\SimpleInjector.Integration.WebApi.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -85,7 +91,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\SimpleInjectorDI.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -102,8 +110,33 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\ForumApp.Application.Service\ForumApp.Application.Service.csproj">
+      <Project>{5D69960B-D40F-41C2-8448-00F709773901}</Project>
+      <Name>ForumApp.Application.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\ForumApp.Domain.DataTransferObject\ForumApp.Domain.DataTransferObject.csproj">
+      <Project>{9F322018-E4F0-4115-9138-DC870B6F5547}</Project>
+      <Name>ForumApp.Domain.DataTransferObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\ForumApp.Domain.Entities\ForumApp.Core.Domain.csproj">
+      <Project>{5C8F4967-1323-4B67-85AA-05A5F3701439}</Project>
+      <Name>ForumApp.Core.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\ForumApp.Domain.Service\ForumApp.Domain.Service.csproj">
+      <Project>{B26BE3F3-0ACC-40AD-AF9C-9B81846B1022}</Project>
+      <Name>ForumApp.Domain.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ForumApp.Infrastructure.DataTransferObject\ForumApp.Infrastructure.DataTransferObject.csproj">
+      <Project>{0D6DCD9A-36B7-4C2E-A4E0-5D4A0BC21BAF}</Project>
+      <Name>ForumApp.Infrastructure.DataTransferObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\ForumApp.Infrasctructure.EntityFramework\ForumApp.Infrasctructure.EntityFramework.csproj">
+      <Project>{BE6C19A1-57BF-43F8-BA60-272F3726C651}</Project>
+      <Name>ForumApp.Infrasctructure.EntityFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
