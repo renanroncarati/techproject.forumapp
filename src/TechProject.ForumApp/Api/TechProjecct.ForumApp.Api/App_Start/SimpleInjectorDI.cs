@@ -31,6 +31,8 @@ namespace TechProjecct.ForumApp.Api.App_Start
             container.Register<ForumAppContext, ForumAppContext>(Lifestyle.Scoped);
             container.Register<IUnitOfWork, UnitOfWork>(Lifestyle.Scoped);
             container.Register<IUserAppService, UserAppService>(Lifestyle.Scoped);
+            container.Register<IPostAppService, PostAppService>(Lifestyle.Scoped);
+            container.Register<ITopicAppService, TopicAppService>(Lifestyle.Scoped);
             #endregion
 
             #region Singleton

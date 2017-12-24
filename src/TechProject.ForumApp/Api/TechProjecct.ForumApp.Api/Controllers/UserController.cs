@@ -10,7 +10,7 @@ using System.Web.Http;
 
 namespace TechProjecct.ForumApp.Api.Controllers
 {
-    [RoutePrefix("posts")]
+    [RoutePrefix("users")]
     public class UserController : ApiController
     {
         private readonly IUserAppService _userAppService;
@@ -19,7 +19,7 @@ namespace TechProjecct.ForumApp.Api.Controllers
             _userAppService = userAppService;
         }
 
-        // GET: posts/5
+        // GET: users/5
         [Route("{id:int}")]
         [HttpGet]
         public async Task<User> Get(int id)
@@ -27,7 +27,7 @@ namespace TechProjecct.ForumApp.Api.Controllers
             return await _userAppService.GetAsync(id);
         }
 
-        // POST: posts
+        // POST: users
         [Route("")]
         [HttpPost]
         public void Post([FromBody]User value)
@@ -35,14 +35,14 @@ namespace TechProjecct.ForumApp.Api.Controllers
             _userAppService.Add(value);
         }
 
-        // PUT: posts/5
+        // PUT: users/5
         [Route("{id:int}")]
         [HttpPut]
         public void Put(int id, [FromBody]User value)
         {
         }
 
-        // DELETE: posts/5
+        // DELETE: users/5
         [Route("{id:int}")]
         [HttpDelete]
         public void Delete(int id)

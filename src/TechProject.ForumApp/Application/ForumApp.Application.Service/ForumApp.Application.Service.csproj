@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\ITopicAppService.cs" />
+    <Compile Include="Interfaces\IPostAppService.cs" />
+    <Compile Include="TopicAppService.cs" />
+    <Compile Include="PostAppService.cs" />
     <Compile Include="UserAppService.cs" />
     <Compile Include="Interfaces\IUserAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="AutoMapperService.cs" />
     <Compile Include="AutoMapperServiceConfiguration.cs" />
+    <Compile Include="Mappings\PostMapping.cs" />
+    <Compile Include="Mappings\TopicMapping.cs" />
     <Compile Include="Mappings\UserMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
