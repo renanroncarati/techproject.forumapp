@@ -40,8 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Post.cs" />
+    <Compile Include="Topic.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ForumApp.Domain.Entities\ForumApp.Core.Domain.csproj">
+      <Project>{5C8F4967-1323-4B67-85AA-05A5F3701439}</Project>
+      <Name>ForumApp.Core.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
