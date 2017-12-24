@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Tech Project Forum App</title>
     @Styles.Render("~/Content/css")
     @*@Scripts.Render("~/bundles/modernizr")*@
 </head>
@@ -42,10 +42,18 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer class="page-footer white">
-            <p class="black-text text-lighten-4">&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
+
+
+    <footer class="page-footer white lighten-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <p class="black-text text-lighten-4">&copy; @DateTime.Now.Year - Tech Project Forum App</p>
+                </div>
+            </div>   
+        </div>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/materialize")
