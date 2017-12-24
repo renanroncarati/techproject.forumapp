@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApp.Application.Service", "Application\ForumApp.Application.Service\ForumApp.Application.Service.csproj", "{5D69960B-D40F-41C2-8448-00F709773901}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechProject.ForumApp.Ui", "TechProject.ForumApp.Ui\TechProject.ForumApp.Ui.csproj", "{23F20B1D-F914-43F3-809C-F276DA8AB23E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{5D69960B-D40F-41C2-8448-00F709773901}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D69960B-D40F-41C2-8448-00F709773901}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D69960B-D40F-41C2-8448-00F709773901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23F20B1D-F914-43F3-809C-F276DA8AB23E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F20B1D-F914-43F3-809C-F276DA8AB23E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F20B1D-F914-43F3-809C-F276DA8AB23E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F20B1D-F914-43F3-809C-F276DA8AB23E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
