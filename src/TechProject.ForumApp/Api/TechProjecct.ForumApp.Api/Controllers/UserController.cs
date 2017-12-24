@@ -19,7 +19,7 @@ namespace TechProjecct.ForumApp.Api.Controllers
             _userAppService = userAppService;
         }
 
-        // GET: api/User/5
+        // GET: posts/5
         [Route("{id:int}")]
         [HttpGet]
         public async Task<User> Get(int id)
@@ -27,7 +27,7 @@ namespace TechProjecct.ForumApp.Api.Controllers
             return await _userAppService.GetAsync(id);
         }
 
-        // POST: api/User
+        // POST: posts
         [Route("")]
         [HttpPost]
         public void Post([FromBody]User value)
@@ -35,12 +35,14 @@ namespace TechProjecct.ForumApp.Api.Controllers
             _userAppService.Add(value);
         }
 
-        // PUT: api/User/5
+        // PUT: posts/5
+        [Route("{id:int}")]
+        [HttpPut]
         public void Put(int id, [FromBody]User value)
         {
         }
 
-        // DELETE: api/User/5
+        // DELETE: posts/5
         [Route("{id:int}")]
         [HttpDelete]
         public void Delete(int id)

@@ -26,7 +26,7 @@ namespace TechProjecct.ForumApp.Api.App_Start
             container.Options.DefaultScopedLifestyle = new AsyncScopedLifestyle();
             container.RegisterWebApiControllers(httpConfiguration);
 
-            // DisposableService implements IDisposable
+            // DisposableService implements IDisposable http://simpleinjector.readthedocs.io/en/latest/disposabletransientcomponent.html
             #region Scoped
             container.Register<ForumAppContext, ForumAppContext>(Lifestyle.Scoped);
             container.Register<IUnitOfWork, UnitOfWork>(Lifestyle.Scoped);

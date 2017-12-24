@@ -55,6 +55,10 @@
     <Compile Include="Migrations\201712231807598_IncludePost_Topic_User.Designer.cs">
       <DependentUpon>201712231807598_IncludePost_Topic_User.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712241256211_AddCategory_Topics.cs" />
+    <Compile Include="Migrations\201712241256211_AddCategory_Topics.Designer.cs">
+      <DependentUpon>201712241256211_AddCategory_Topics.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\PostRepository.cs" />
@@ -66,6 +70,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201712231807598_IncludePost_Topic_User.resx">
       <DependentUpon>201712231807598_IncludePost_Topic_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712241256211_AddCategory_Topics.resx">
+      <DependentUpon>201712241256211_AddCategory_Topics.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

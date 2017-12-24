@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Context\IForumAppContext.cs" />
     <Compile Include="Enum\PostStatus.cs" />
+    <Compile Include="Enum\TopicCategory.cs" />
     <Compile Include="Enum\TopicStatus.cs" />
     <Compile Include="Entities\Topic.cs" />
     <Compile Include="IUnitOfWork.cs" />

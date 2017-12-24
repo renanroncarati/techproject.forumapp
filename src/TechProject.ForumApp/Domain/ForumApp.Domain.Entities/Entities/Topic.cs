@@ -16,6 +16,7 @@ namespace ForumApp.Core.Domain.Entities
         public DateTime Created { get; set; }
         public DateTime LastUpdate { get; set; }
         public TopicStatus Status { get; set; }
+        public TopicCategory Category { get; set; }
 
         public int UserId { get; set; }
 
