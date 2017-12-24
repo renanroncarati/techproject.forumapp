@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using ForumApp.Domain.DataTransferObject;
 using ForumApp.Core.Domain;
 using ForumApp.Domain.Service.Interfaces;
+using ForumApp.Core.Domain.Enum;
 
 namespace ForumApp.Application.Service
 {
@@ -25,6 +26,10 @@ namespace ForumApp.Application.Service
         {
             using (_unitOfWork)
             {
+                topic.Created = DateTime.UtcNow;
+                topic.LastUpdate = DateTime.UtcNow;
+                topic.Status = TopicStatus.Active;                
+
                 var entityTopic = _mapper.Map<Core.Domain.Entities.Topic>(topic);
                 _unitOfWork.TopicRepository.Add(entityTopic);
 

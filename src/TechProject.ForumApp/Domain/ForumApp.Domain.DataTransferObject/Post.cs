@@ -14,5 +14,7 @@ namespace ForumApp.Domain.DataTransferObject
         public string Content { get; set; }
         public DateTime Created { get; set; }
         public PostStatus Status { get; set; }
+        public int UserId { get; set; }
+        public int TopicId { get; set; }
     }
 }

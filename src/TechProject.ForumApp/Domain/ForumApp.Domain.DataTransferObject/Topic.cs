@@ -15,5 +15,6 @@ namespace ForumApp.Domain.DataTransferObject
         public DateTime LastUpdate { get; set; }
         public TopicStatus Status { get; set; }
         public TopicCategory Category { get; set; }
+        public int UserId { get; set; }
     }
 }

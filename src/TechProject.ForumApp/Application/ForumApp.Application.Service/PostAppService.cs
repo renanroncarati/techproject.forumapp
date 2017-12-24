@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using ForumApp.Domain.DataTransferObject;
 using ForumApp.Core.Domain;
 using ForumApp.Domain.Service.Interfaces;
+using ForumApp.Core.Domain.Enum;
 
 namespace ForumApp.Application.Service
 {
@@ -25,6 +26,9 @@ namespace ForumApp.Application.Service
         {
             using (_unitOfWork)
             {
+                post.Created = DateTime.UtcNow;
+                post.Status = PostStatus.Published;
+
                 var entityPost = _mapper.Map<Core.Domain.Entities.Post>(post);
                 _unitOfWork.PostRepository.Add(entityPost);
 

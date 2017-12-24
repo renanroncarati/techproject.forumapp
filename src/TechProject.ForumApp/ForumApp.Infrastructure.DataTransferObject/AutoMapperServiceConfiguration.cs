@@ -8,8 +8,15 @@ namespace ForumApp.Infrastructure.DataTransferObject
     {
         public static void Configure()
         {
-            var profiles = typeof(UserMapping).Assembly.GetTypes().Where(t => typeof(Profile).IsAssignableFrom(t));
-            Mapper.Initialize(m => m.AddProfiles(profiles));
+            //var profiles = typeof(UserMapping).Assembly.GetTypes().Where(t => typeof(Profile).IsAssignableFrom(t));
+            //Mapper.Initialize(m => m.AddProfiles(profiles));
+
+            Mapper.Initialize(m =>
+            {
+                m.AddProfile<PostMapping>();
+                m.AddProfile<UserMapping>();
+                m.AddProfile<TopicMapping>();
+            });
         }
 
         public static void AssertConfigurationIsValid()

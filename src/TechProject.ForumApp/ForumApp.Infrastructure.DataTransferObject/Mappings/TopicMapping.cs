@@ -14,8 +14,7 @@ namespace ForumApp.Infrastructure.DataTransferObject.Mappings
             CreateMap<Core.Domain.Entities.Topic, Domain.DataTransferObject.Topic>();
             CreateMap<Domain.DataTransferObject.Topic, Core.Domain.Entities.Topic>()
                 .ForMember(dest => dest.Posts, opt => opt.Ignore())
-                .ForMember(dest => dest.User, opt => opt.Ignore())
-                .ForMember(dest => dest.UserId, opt => opt.Ignore());
+                .ForMember(dest => dest.User, opt => opt.Ignore());
         }
     }
 }
